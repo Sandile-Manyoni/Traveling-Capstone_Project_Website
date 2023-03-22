@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Travel to Maldives</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+</head>
+<body>
+    <!--Sandile-->
+    <div class="box-area" >
+        <header>
+            <div class="wrapper">
+               <div class="logo"> 
+                   <a href="#">Maldives</a>
+               </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="experience.html">Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+       <div class="banner-area">
+        <img alt="image" class="banner-image2" src="Images/3.jpg">
+       </div>
+       <div class="content-area2">
+        <div class="holdingcontainer">
+            <div class="internalcontainerLeft">
+                <h1>BENEATH THE OCEAN BEDROOM</h1><img alt="image" class="res-responsive image-resize" src="Images/The Maraka at Conrad Underwater bedroom experience.jpg" width="100%"/><br><br>
+                
+                Experience master bedroom with 180-degree curved acrylic dome
+                Floor-to-ceiling windows in the bathroom and walk-in closet
+                Dedicated tunnel viewing theater
+            </div>
+            <div class="internalcontainerMiddle">
+                <h1>BENEATH THE OCEAN RESTUARENT</h1><img alt="image" class="res-responsive image-resize" src="Images/Ithaa Underwater restaurant experience.jpg" width="100%"/><br><br>
+                Dine five meters below the surface of the ocean, 
+                in the world’s first undersea restaurant, with panoramic coral garden views and fusion menus matched with fine wines. 
+                
+            </div>
+            <div class="internalcontainerRight">
+                <h1>BENEATH THE OCEAN <br>SPA</h1><img alt="image" class="res-responsive image-resize" src="Images/huvafen-fushi-5.jpg" width="100%"/><br><br>
+                Step eight metres below the surface to a secret underwater world. 
+                Welcome to the first – and only – underwater spa treatment rooms in the world. 
+                Once-in-a-lifetime experiences.
+            </div>
+        </div>
+       </div>
+       <div class="content-area4">
+        <form id="quoteForm/action_page.php" action="mailto:sandile.alwande@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Bookings</legend>
+                <label for="fname">First name:</label>
+                <input id="fname" type="text"  name="fname" maxlength="20">
+                <label for="email">Email Address:</label>
+                <input id="email" type="email"  name="email" maxlength="40">
+                <br>
+                <br>
+                <p>Which season you want to travel on:</p>
+        
+                <input type="radio" id="spring" name="season" value="spring" aria-label="novice">
+                <label for="Novice">Spring</label>
+                <input type="radio" id="summer" name="season" value="summer" checked aria-label="intermediate">
+                <label for="Intermediate">Summer</label>
+                <input type="radio" id="autumn" name="season" value="autumn" aria-label="expert">
+                <label for="Expert">Autumn</label>
+                <input type="radio" id="winter" name="experience" value="winter" aria-label="winter">
+                <label for="Expert">Winter</label>
+
+            
+            <br>
+                <label for="nrtravelers">Number of travelers:</label>
+                <input id="nrtravelers" type="number"  name="nrtravelers">
+                <br><br>
+                <label for="date">Date: From</label>
+                <input type="date" id="start-date" name="date" aria-label="start_date">
+                <label for="date">To</label>
+               <input type="date" id="end-date" name="date" aria-label="end_date">
+                <br><br>
+                <p>Indicate a trip you could take:</p>
+                <select id="Interests" size="3" aria-label="Interests">
+                    <option value="Baecation"> Baecation </option>
+                    <option value="Friendication"> Friendication </option>
+                    <option value="Vacation"> Vacation </option>
+                </select>
+                <br>
+                <input type="reset" id="clearForm" value="Clear form" onclick="clearForm">
+                <input type="button" id="sendInfo" value="Send info" onclick="sendInfo">
+                <input type="button" id="calculateFees"	value="Booking fees" onclick="calculateFees">
+            
+            <br><br><br>
+            
+            </fieldset>
+        </form>
+       </div>
+    </div>
+
+    <script src="Scripts/Scripts.js"></script>
+</body>
+
+</html>

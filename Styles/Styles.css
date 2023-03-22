@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0% auto;
+}
+.wrapper1{
+    width: 1170px;
+    margin: 0% auto;
+}
+header{
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: bignoodletitling;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 13pxS;
+}
+nav a.active,a:hover{
+    background:#262626 ;
+    transition: .2s;
+}
+.banner-area{
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    top: 100px;
+}
+
+.banner-image{
+    width: 100%;
+    display:block;
+}
+.banner-image1{
+    width: 100%;
+    display:inline;
+}
+.banner-image2{
+    width: 100%;
+    display:inline;
+}
+.banner-image3{
+    width: 100%;
+    display:inline;
+}
+.content-area{
+    width: 100%;
+    position:relative;
+    top: 450px;
+    background: #ddd;
+    height: 500px;
+}
+.content-area h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    padding: 30px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.content-area p{
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.content-area h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    padding: 25px;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+.content-area1 {
+    width: 100%;
+    position:relative;
+    top: 450px;
+    background: #ddd;
+    height: 730px;
+}
+.content-area1 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    padding: 30px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.content-area1 p{
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.content-area2{
+    width: 100%;
+    position:relative;
+    top: 450px;
+    background: #ddd;
+    height: 400px;
+}
+.content-area2 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    padding: 30px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.content-area2 p{
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.content-area4{
+    width: 100%;
+    position:relative;
+    top: 450px;
+    background: #ddd;
+    height: 550px;
+    padding: 0px;
+}
+.content-area4 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.content-area4 p{
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.content-area3{
+    width: 100%;
+    position:relative;
+    top: 450px;
+    background: #ddd;
+    height: 650px;
+}
+.content-area3 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    padding: 30px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.content-area3 h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    padding: 25px;
+    font-size: 15px;
+    margin: 0;
+    text-align: left;
+}
+.content-area3 p{
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.italicBlue
+{font-style: italic;
+ color: palevioletred;
+}
+.tip{
+	color:palevioletred;
+	position: relative;
+}
+.tipText{
+	display: none;
+}
+
+.tip:hover .tipText{
+	display:block;
+	color:whitesmoke;
+	background-color:#262626;
+	font-size: 80%;
+	position:absolute;
+	top: 10px;
+	left: 5px;
+	width: 200px;
+}
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+    bottom: 0;
+    text-transform: uppercase;
+	background-color: #262626;
+	color: white;
+	text-align: center;
+    height: 30px;
+}
+.checkbtn{
+ font-size: 30px;
+ color: white;
+ float: right;
+ line-height: 80px;
+ margin-right: 40px;
+ cursor: pointer;
+ display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #262626;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block; 
+        margin: 50px; 
+        line-height: 30px; 
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.actve{
+        background: none;
+        color: gray;
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+table{
+    border-collapse: collapse;
+    margin:  1em 1em 1em 1em;
+}
+
+table, th, td {
+    padding: 0.5em;
+    border-collapse:collapse;
+    border: 1px solid;  
+	border-color:#262626;
+	
+}
+
+table th
+{
+text-align: center;
+font-weight: bold;
+}
+
+.externalLinks 
+{
+    display: block;
+    text-decoration: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    text-align: left;
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    text-align: left;
+  }
+  input[type=submit] {
+    background-color: #262626;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=reset]:hover {
+    background-color: darkgray;
+  }
+  input[type=reset] {
+    background-color: #262626;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=button] {
+    background-color: #262626;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: darkgray;
+  }
+  
+  input[type=submit]:hover {
+    background-color: darkgray;
+  }
+ 
+  .select-selected {
+    background-color: #262626;
+  }
+  #Interests{
+    width: 140px;
+    height: 80px;
+  }
+  #Interests option {
+        width: 90px;
+        height: 20px;
+
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+.holdingcontainer{
+    width: 100%;
+    display: flex;
+    background: #0082e6;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.internalcontainerLeft{
+   flex:1;
+   background: gray; 
+   padding: 30px;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-image-width: 100%;
+}
+.internalcontainerMiddle{
+    flex:1;
+    background: gray; 
+    padding: 30px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-image-width: 100%;
+ }
+.internalcontainerRight{
+    flex:1;
+    background: gray; 
+    padding: 30px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-image-width: 100%;
+ }
+ .image-resize{
+     height: 200px;
+ }
+
+ @media  and ,(max-width: 768px) {
+     .holdingcontainer{
+         flex-direction: column-reverse;
+     }
+ }
+
+fieldset{
+    padding: 0 10px;
+}
+.flexContainer{
+	display:flex;
+}
+
+#flexItem1{
+	flex: 3;
+	padding: 1em;
+    margin: 0.5em;
+    background: white;
+    box-sizing: border-box;
+	width:70%;
+}
+
+#flexItem2{
+	flex: 1;
+	padding: 1em;
+	margin: 0.5em;
+	background: white;
+	box-sizing: border-box;
+	width:30%;
+}
