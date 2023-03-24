@@ -1,44 +1,56 @@
+// Calculating the total amount for travellers based on the clients needs
 
-function calculateFees(){
- 
-    var nrmembers = document.getElementById('nrmembers').number;
-        fname = document.getElementById('fname').text;
-        priceBaecation = document.getElementById('Baecation').value;
-        priceFriendication = document.getElementById('Friendication').value;
-        priceVacation = document.getElementById('Vacation').value;
-        priceCouple = 23000;
-        priceFriend = 18000;
-        priceAlone = 25000;
-        total ="";
+function calculateFees() {
+    var selectedOption = document.getElementById("Interests").value;
+    var nrtravelers = document.getElementById("nrtravelers").value;
+  
+    var costPerTraveller;
+    if (selectedOption === "Baecation") {
+      costPerTraveller = 23000;
+    } else if (selectedOption === "Friendication") {
+      costPerTraveller = 18000;
+    } else if (selectedOption === "Vacation") {
+      costPerTraveller = 25000;
     }
+  
+    var totalFees = costPerTraveller * nrtravelers;
+    document.getElementById("bookingFees").innerHTML = "Total Booking Fees: R" + totalFees;
+  }
+
+
+//Clearing the selection and information input by the client on the forms
     
-    if (Baecation.selected, Friendication.selected, Vacation.selected){
-        
-        total = (nrmembers*priceCouple, priceFriend, priceAlone) 
-        
-        document.write(fname, "the total booking amount is R",total);
-    }
-    
-    $('#clearForm').click(function(){
-        $('#quoteForm')[0].reset();
-    });
+function clearForm() {
+    document.getElementById("quoteForm").reset();
+  }
 
-    $( "p" ).on( "click", function() {
-        $( this ).css( "color", "red" );
-        });
+// send qoutation to the client
 
-        $(document).ready(function() {
-            $('#sendInfo').click(function() {
-                $('#quoteForm').attr('action',
-                               'mailto:sandile.alwande@gmail.com?',
-                $('#quoteForm').button());
-            });
-        });
+function sendInfo() {
+  const form = document.querySelector('#quoteForm');
+  const formData = new FormData(form);
+  const name = formData.get('fname');
+  const email = formData.get('email');
+  const season = formData.get('season');
+  const travelers = formData.get('nrtravelers');
+  const interests = formData.getAll('Interests');
 
-        $(document).ready(function() {
-            $('#sendInfo').click(function() {
-                $('#action_page').attr('action',
-                               'mailto:sandile.alwande@gmail.com?',
-                $('#action_page').button());
-            });
-        });
+  const message = `
+    Hi ${name},
+
+    Thank you for your interest in our travel packages. Here is the information you provided:
+
+    Email: ${email}
+    Season: ${season}
+    Number of travelers: ${travelers}
+    Interests: ${interests.join(', ')}
+
+    We will get back to you soon with a customized quote.
+
+    Best regards,
+    The Travel Company
+  `;
+
+  const link = `mailto:sandile.alwande@gmail.com?subject=Travel Quote Request&body=${encodeURIComponent(message)}`;
+  window.location.href = link;
+}
