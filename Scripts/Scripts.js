@@ -1,3 +1,4 @@
+
 function calculateFees(){
  
     var nrmembers = document.getElementById('nrmembers').number;
